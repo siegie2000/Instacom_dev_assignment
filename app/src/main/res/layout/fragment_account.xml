@@ -69,7 +69,7 @@
         android:id="@+id/empty_recyclerview_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="18dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="No posts yet\n Tap the circle in the bottom-right \nto add your first post."
         android:textAlignment="center"

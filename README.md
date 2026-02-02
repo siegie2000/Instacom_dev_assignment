@@ -194,6 +194,104 @@ Avoided over-design to keep the app clean and easy to use
 
 
 
+App Architecture
+
+
+
+The app follows a basic MVVM-style structure with clear separation between authentication flow, UI screens, state management, and network operations.
+
+
+
+Entry \& Navigation
+
+
+
+sign\_in and sign\_up are simple Activities used for authentication.
+
+
+
+Once authenticated, the user is navigated to MainActivity, which acts as the main host for the app.
+
+
+
+MainActivity manages navigation between Fragments using bottom navigation.
+
+
+
+UI Structure
+
+ui/
+
+&nbsp;├── home/
+
+&nbsp;│   ├── HomeFragment
+
+&nbsp;│   ├── HomeViewModel
+
+&nbsp;│   ├── news\_repository
+
+&nbsp;│   └── adapter\_feed
+
+&nbsp;├── account/
+
+&nbsp;│   ├── AccountFragment
+
+&nbsp;│   ├── AccountViewModel
+
+&nbsp;│   ├── account\_repository
+
+&nbsp;│   └── your\_post\_adapter
+
+&nbsp;├── notifications/
+
+MainActivity
+
+sign\_in
+
+sign\_up
+
+
+
+Key Concepts Used
+
+
+
+Activities
+
+
+
+sign\_in and sign\_up handle authentication
+
+
+
+MainActivity hosts the main app navigation
+
+
+
+Fragments for UI screens such as Home and Account
+
+
+
+ViewModels for managing UI state and business logic
+
+
+
+Repositories for API and network operations
+
+
+
+LiveData for observing data changes
+
+
+
+RecyclerView for displaying feeds
+
+
+
+Dialogs \& AlertDialogs for creating, editing, and deleting posts
+
+
+
 Libraries \& Dependencies
 
 

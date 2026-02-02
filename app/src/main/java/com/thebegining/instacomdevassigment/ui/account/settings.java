@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -15,11 +14,8 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 
 import com.google.android.material.appbar.MaterialToolbar;
-import com.thebegining.instacomdevassigment.MainActivity;
-import com.thebegining.instacomdevassigment.R;
-import com.thebegining.instacomdevassigment.databinding.ActivityMainBinding;
 import com.thebegining.instacomdevassigment.databinding.SettingsBinding;
-import com.thebegining.instacomdevassigment.sign_inActivity;
+import com.thebegining.instacomdevassigment.sign_in;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -30,7 +26,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Set;
 
 public class settings extends Activity {
     ArrayList<your_data> feed = new ArrayList<>();
@@ -60,7 +55,7 @@ public class settings extends Activity {
                         .putString("username", null)
                         .putString("name", null)
                         .apply();
-                Intent intent = new Intent(getApplicationContext(), sign_inActivity.class);
+                Intent intent = new Intent(getApplicationContext(), sign_in.class);
                 startActivity(intent);
                 finish();
             }
@@ -94,7 +89,7 @@ public class settings extends Activity {
                                                 .putString("name", null)
                                                 .apply();
 
-                                        Intent intent = new Intent(getApplicationContext(), sign_inActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), sign_in.class);
                                         startActivity(intent);
                                         finish();
                                     }

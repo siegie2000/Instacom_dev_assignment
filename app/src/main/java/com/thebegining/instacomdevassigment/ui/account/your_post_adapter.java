@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,10 +23,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 import com.thebegining.instacomdevassigment.R;
-import com.thebegining.instacomdevassigment.sign_inActivity;
-import com.thebegining.instacomdevassigment.sign_up;
-import com.thebegining.instacomdevassigment.ui.home.adapter_feed;
-import com.thebegining.instacomdevassigment.ui.home.news_repository;
 
 
 import org.json.JSONObject;

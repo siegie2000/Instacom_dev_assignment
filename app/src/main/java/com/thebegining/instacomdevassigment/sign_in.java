@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,7 +26,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 
-public class sign_inActivity extends Activity {
+public class sign_in extends Activity {
     private SignInBinding binding;
     Button sign_in;
     Button sign_up;

@@ -15,7 +15,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -24,10 +23,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
-import com.thebegining.instacomdevassigment.MainActivity;
 import com.thebegining.instacomdevassigment.R;
 import com.thebegining.instacomdevassigment.databinding.FragmentAccountBinding;
-import com.thebegining.instacomdevassigment.sign_inActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

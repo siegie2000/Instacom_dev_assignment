@@ -93,7 +93,13 @@ public class HomeFragment extends Fragment {
         viewmodel.loadpost();
 
 
-        fab.setOnClickListener(v -> showPostDialog());
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPostDialog();
+            }
+        });
+
 
         return root;
     }
